@@ -1,0 +1,266 @@
+Ques - 1
+--------------------
+Write a Java program to check a number is a Neon number or not .
+A number is Neon if the sum of the digits of its square equals the number itself.Methods:
+
+Modifier: public, static
+Return type: int
+Method name: getSquare()
+Parameter: int
+Logic:
+This method takes an integer number as a parameter and returns its square.
+
+Modifier: public, static
+Return type: boolean
+Method name:  isNeonNumber()
+Parameter: int
+Logic
+This method takes an integer number as a parameter and uses the getSquare method to determine if the number is a Neon Number. It returns true if the number is a Neon Number, otherwise returns false.
+
+In main prompt the user to enter a number and call isNeonNumber() by passing the number . If the method return true print <number>
+is a Neon number , if not then print <number> is not a Neon number.
+Constraints:
+
+The input number will be a positive integer.
+Example:
+Input:
+9
+Output:
+9 is a Neon number.
+  (Explanation: 9^2 = 81 ,Sum of digits = 8 + 1 = 9)
+
+
+Input:
+12
+Output:
+12 is not  a Neon number.
+ (Explanation:  12^2 = 144, Sum of digits = 1 + 4 + 4 = 9)
+
+Ques- 2
+-----------------
+Java Programming Question:
+Write a Java program to check whether a given number is an Emirp Number or not.A number is considered an Emirp Number if:
+It is a prime number.
+Its reverse is also a prime number.
+13, 17, 31, 37, 71, 73, 79, 97, 107, 113, 149, 157, 167, 179, 199, 311, 337, 347, 359, 389, 701, 709, 733, 739, 743, 751, 761, 769, 907, 937, 941, 953, 967, 971, 983, 991, 1009, 1021, 1031, 1033, 1061, 1069, 1091, 1097, 1103, 1109, 1151, 1153, 1181, 1193, 1201........
+Requirements:
+
+Method 1:
+Modifier: public static
+Return type: boolean
+Method name: isPrime
+Parameter: int number
+Logic:
+This method takes an integer number as input and returns true if the number is a prime number; otherwise, it returns false.
+
+Method 2:
+Modifier: public static
+Return type: int
+Method name: reverseNumber
+Parameter: int number
+Logic:
+This method takes an integer number as input and returns its reverse.
+
+Method 3:
+Modifier: public static
+Return type: boolean
+Method name: isEmirpNumber
+Parameter: int number
+Logic:
+This method determines if the given number is an Emirp Number by:
+
+Checking if the number is prime using the isPrime method.
+Calculating the reverse of the number using the reverseNumber method.
+Checking if the reverse is also prime using the isPrime method.
+
+Main Method:
+In the main method, prompt the user to enter a number. Call the isEmirpNumber method with the input and print whether the number is an Emirp Number or not.
+
+Constraints:
+The input number will be a positive integer greater than 1.
+
+Example:
+
+Input:
+13
+Output:
+13 is an Emirp Number.
+(Explanation:  13 is prime; its reverse 31 is also prime.)
+
+Input:
+11
+Output:
+11 is not an Emirp Number.
+(Explanation:  11 is prime, but its reverse is also  11, so it does not qualify as Emirp.)
+
+Input:
+17
+Output:
+17 is an Emirp Number.
+(Explanation:  17 is prime; its reverse  71 is also prime.)
+
+Input:
+
+Copy code
+23
+Output:
+23 is not an Emirp Number.
+(Explanation:  23 is prime; but its reverse  32 is not a prime.)
+
+Ques - 3
+--------------------
+ Vehicle Speed and Fuel Efficiency.
+Write a Java program to model a Vehicle and calculate its speed and fuel efficiency 
+based on the distance traveled, time taken, and fuel consumed.
+Requirements:
+
+Define a Vehicle class with the following:
+
+Attributes:
+String name: Name of the vehicle.
+int distance: Distance traveled (in kilometers).
+int time: Time taken (in hours).
+int fuel: Fuel consumed (in liters).
+
+Methods:
+
+Method: 1
+Modifier: public
+Return type: double
+Method name: calculateSpeed()
+Logic:
+Returns the speed of the vehicle (calculated as Speed = Distance/time).
+
+Method: 2
+Modifier: public
+Return type: double
+Method name: calculateFuelEfficiency
+Logic:
+Returns the fuel efficiency of the vehicle (calculated as Fuel Efficiency = Distance/Fuel).
+
+Method: 3
+public void displayVehicleDetails():
+Prints the vehicle's details (name, distance, time, and fuel consumed).
+
+Main Method:
+Create a Vehicle object and initialize all properties by reading from user-supplied input values for name, distance, time, and fuel.
+Display the vehicle details using the displayVehicleDetails() method.
+Calculate and display the speed of the vehicle using the calculateSpeed() method.
+Calculate and display the fuel efficiency of the vehicle using the calculateFuelEfficiency() method.
+
+Constraints:
+The  time must be positive integers and greater than zero.
+
+Example:
+Input:
+Enter Vehicle Name: Audi
+Enter Distance Travelled (in km): 300
+Enter Time Taken (in hours): 5
+Enter Fuel Consumed (in liters): 20
+
+Output:
+Vehicle Name: Audi
+Distance Travelled: 300 km
+Time Taken: 5 hours
+Fuel Consumed: 20 liters
+Speed: 60.0 km/h
+Fuel Efficiency: 15.0 km/l
+
+Example:
+Input:
+Enter Vehicle Name: BMW
+Enter Distance Travelled (in km): 300
+Enter Time Taken (in hours): -5
+Enter Fuel Consumed (in liters): 20
+
+Output:
+Negative time is not allowed.
+
+Ques  - 4
+-----------------------
+Zomato Order Bill with Quantity.
+Write a Java program to calculate the total bill for a Zomato food order, including the quantity of items ordered, discounts, and taxes. The program should include methods to calculate the discount, tax, and the final total bill based on the quantity of items ordered.Requirements:
+Class:  ZomatoOrder
+
+Attributes (Non-static):
+String customerName: Name of the customer.
+double orderAmount: Price per item (in rupees).
+int quantity: Quantity of items ordered.
+double discountRate: Discount percentage applied to the total order amount.
+double taxRate: Tax percentage applied to the total order amount.
+
+Methods:
+Method: 1
+Modifier: public
+Return type: double
+Method name: calculateTotalAmount()
+Calculates the total order amount by multiplying the orderAmount by quantity using the formula:
+Total Amount = orderAmount × quantity
+
+Method: 2
+Modifier: public
+Return type: double
+Method name: calculateDiscount():
+Calculates the discount amount on the total order amount using the formula:
+Discount = Total Amount × discountRate/100
+
+Method: 3
+Modifier: public
+Return type: double
+Method name: calculateTax():
+Calculates the tax amount on the discounted total order amount using the formula:
+Tax = (Total Amount - Discount ) × taxRate/100
+
+Method: 4
+Modifier: public
+Return type: double
+Method name:calculateTotalBill():
+Calls calculateDiscount() and calculateTax() to compute the final total bill using:
+Total Bill = Total Amount - Discount + Tax
+
+Method: 5
+public void printBill():
+Prints the customer name, quantity, order amount, discount, tax, and final total bill.
+
+In main :
+Prompt the User for Input.
+Create an Object of the Class and initialize all the properties with user entered values.
+Display the Final Bill.
+
+Example Input/Output:
+Input:
+Enter Customer Name: Bhanu Pratap Singh
+Enter Price per Item:  300
+Enter Quantity: 4
+Enter Discount Rate (in %): 15
+Enter Tax Rate (in %): 8
+
+Output:
+Customer Name: Bhanu Pratap Singh
+Quantity: 4
+Order Amount:  300.0
+Total Amount:  1200.0
+Discount Applied:  180.0
+Tax Applied:  81.6
+Total Bill Amount:  1101.6
+
+Ques - 5
+-----------------
+Write a Java program that performs the following tasks:
+
+Input: Accept a single character as input from the user.
+Output:
+Display the ASCII value of the entered character.
+Display the Unicode value of the entered character in the format \uXXXX (uppercase hexadecimal representation) by using String.format() method.
+The program should calculate and print the ASCII value and Unicode value of the entered character.
+Example:
+
+Input:
+A
+Output:
+Character: A, ASCII: 65, Unicode: \u0041
+
+Input:
+@
+Output:
+Character: @, ASCII: 64, Unicode: \u0040

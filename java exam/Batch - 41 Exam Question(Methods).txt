@@ -1,0 +1,413 @@
+SET-A
+---------
+Q.1
+=======
+Define a class called Car that has two non-static instance variables:
+make (String)
+year (int)
+
+Methods:
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic:
+A method displayDetails() that prints the details of the car (make and year).
+
+Modifiers: public
+Return type: void
+Method name: updateYear()
+Parameter: int newYear
+Logic:
+Define a method updateYear(int newYear) that accepts a parameter newYear and updates the year of the car.
+
+Modifiers: public
+Return type: void
+Method name: checkVintage()
+Parameter: int currentYear
+Logic:
+Create another method checkVintage(int currentYear) that takes currentYear as a parameter and prints true if the car is more than 30 years old (i.e., the car's year is less than or equal to currentYear - 30).else it prints false.
+
+In your main method:
+
+Create an object of the Car class.
+Display the car's details.
+Update the car's year using the updateYear() method.
+Display the updated details.
+Check if the car is vintage by calling the checkVintage() method and display the result.
+
+Example Output:
+Car Make: Toyota, Year: 1990
+Is the car vintage ? true
+
+
+
+Q.2
+=====
+Define a class called BankAccount that has two non-static instance variables:
+
+accountHolder (String)
+balance (double)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic: A method displayDetails() that prints the details of the bank account (account holder’s name and balance).
+
+Modifiers: public
+Return type: void
+Method name: depositAmount()
+Parameter: double deposit
+Logic: Define a method depositAmount(double deposit) that accepts a parameter deposit and adds the deposit amount to the account’s balance.
+
+Modifiers: public
+Return type: void
+Method name: withdrawAmount()
+Parameter: double withdrawal
+Logic: Create a method withdrawAmount(double withdrawal) that takes withdrawal as a parameter. The method should check if the balance is greater than or equal to the withdrawal amount. If true, the method should subtract the withdrawal from the balance and prints "Withdrawal successful. New balance: ". If false, then it prints "insufficient funds".
+
+Modifiers: public
+Return type: void
+Method name: calculateInterest()
+Parameter: int months
+Logic: Define a method calculateInterest(int months) that calculates the interest on the balance at a rate of 3% per year (0.25% per month). The method should print the total interest accumulated over the specified number of months. The interest is calculated as balance * (interestRate * months).
+
+In your main method:
+
+Create an object of the BankAccount class.
+Display the account details.
+Deposit a certain amount using the depositAmount() method and display the updated balance.
+Try to withdraw an amount using the withdrawAmount() method and display whether the withdrawal was successful.
+Calculate and display the interest accumulated over a specific number of months using the calculateInterest() method.
+
+Expected Output:
+Account Holder: Prateek Yadav, Balance: 1000.0
+
+After depositing 500:
+Account Holder: Prateek Yadav, Balance: 1500.0
+
+Attempting to withdraw 200:
+Withdrawal successful. New balance: 1300.0
+
+Interest accumulated over 6 months: 19.5
+
+Q.3
+-----
+Write a Java program that performs the following tasks:
+
+Define a class called PerfectNumberChecker that has two non-static instance variable:
+
+number (int)
+isPerfect (boolean)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: checkPerfectNumber()
+Parameter: None
+Logic: Define a method checkPerfectNumber() that checks whether the number is a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding the number itself). For example, 6 is a perfect number because its divisors are 1, 2, and 3, and 1 + 2 + 3 = 6. The method should initialize isPerfect variable to true if the number is a perfect number, and false otherwise.
+
+Modifiers: public
+Return type: void
+Method name: perfectNumberStatus()
+Parameter: None
+Logic: Define a method perfectNumberStatus() that checks the isPerfect variable and and prints a message:
+
+If the number is a perfect number, print "The number is a perfect number".
+If the number is not a perfect number, print "The number is not a perfect number".
+
+In your main method:
+
+Create an object of the PerfectNumberChecker class.
+Set a number and Display the result of the perfectNumberStatus() method.
+
+Example Output:
+
+Number: 6
+The number is a perfect number
+
+Number: 28
+The number is a perfect number
+
+Number: 10
+The number is not a perfect number
+
+
+Set - B
+==========
+Q.1
+------
+Define a class called Book that has two non-static instance variables:
+
+title (String)
+yearPublished (int)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic: A method displayDetails() that prints the details of the book (title and year published).
+
+Modifiers: public
+Return type: void
+Method name: updateYear()
+Parameter: int newYear
+Logic: Define a method updateYear(int newYear) that accepts a parameter newYear and updates the year the book was published.
+
+Modifiers: public
+Return type: void
+Method name: checkClassic()
+Parameter: int currentYear
+Logic: Create a method checkClassic(int currentYear) that takes currentYear as a parameter and prints true if the book is more than 50 years old (i.e., the book's yearPublished is less than or equal to currentYear - 50) else it prints false.
+
+In your main method:
+
+Create an object of the Book class.
+Display the book's details.
+Update the book's year of publication using the updateYear() method.
+Display the updated details.
+Check if the book is a classic by calling the checkClassic() method and display the result.
+
+Expected Output:
+Book Title: The Great Gatsby, Year Published: 1925
+
+After updating the year of publication:
+Book Title: The Great Gatsby, Year Published: 1930
+
+Is the book a classic ? true
+
+
+Q.2
+------
+
+Define a class called Student that has two non-static instance variables:
+
+name (String)
+marks (double)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic: A method displayDetails() that prints the details of the student (name and marks).
+
+Modifiers: public
+Return type: void
+Method name: updateMarks()
+Parameter: double newMarks
+Logic: Define a method updateMarks(double newMarks) that accepts a parameter newMarks and updates the student's marks.
+
+Modifiers: public
+Return type: void
+Method name: hasPassed()
+Parameter: None
+Logic: Create a method hasPassed() that prints true if the student's marks are 50 or greater, and false otherwise (indicating whether the student has passed or failed).
+
+Modifiers: public
+Return type: void
+Method name: calculateGrade()
+Parameter: None
+Logic: Define a method calculateGrade() that calculates the grade based on the student's marks and it prints the grade. The grade is determined as follows:
+
+A if marks are 85 or greater
+B if marks are between 70 and 84
+C if marks are between 50 and 69
+F if marks are less than 50
+
+In your main method:
+
+Create an object of the Student class.
+Display the student's details.
+Update the student's marks using the updateMarks() method and display the updated details.
+Check if the student has passed using the hasPassed() method and display the result.
+Calculate and display the student's grade using the calculateGrade() method.
+
+Expected Output:
+Student Name: Kathy, Marks: 72
+
+After updating marks to 88:
+Student Name: Kathy, Marks: 88
+
+Has the student passed ? true
+
+Student's Grade: A
+
+Q.3
+-------
+Define a class called PalindromeNumberChecker that has two non-static instance variable:
+
+number (int)
+isPalindrome (boolean)
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: checkPalindrome()
+Parameter: None
+Logic: Define a method checkPalindrome() that checks whether the number is a palindrome. A palindrome number is a number that remains the same when its digits are reversed. The method should assign true to the isPalindrome variable if the number is a palindrome, and false otherwise.
+
+Modifiers: public
+Return type: void
+Method name: palindromeStatus()
+Parameter: None
+Logic: Define a method palindromeStatus() checks the isPalindrome variable and prints a message:
+
+If the number is a palindrome, prints "The number is a palindrome".
+If the number is not a palindrome, prints "The number is not a palindrome".
+
+In your main method:
+
+Create an object of the PalindromeNumberChecker class.
+Set a number and Display the result of the palindromeStatus() method.
+
+Expected Output:
+Number: 121
+The number is a palindrome
+
+Number: 123
+The number is not a palindrome
+
+
+Set-C
+--------
+Q.1
+-----
+Define a class called Movie that has two non-static instance variables:
+
+title (String)
+releaseYear (int)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic: A method displayDetails() that prints the details of the movie (title and release year).
+
+Modifiers: public
+Return type: void
+Method name: updateReleaseYear()
+Parameter: int newReleaseYear
+Logic: Define a method updateReleaseYear(int newReleaseYear) that accepts a parameter newReleaseYear and updates the year the movie was released.
+
+Modifiers: public
+Return type: void
+Method name: checkAwardWinner()
+Parameter: int currentYear
+Logic: Create a method checkAwardWinner(int currentYear) that takes currentYear as a parameter and prints true if the movie is more than 20 years old (i.e., the movie's releaseYear is less than or equal to currentYear - 20), indicating that the movie might have won awards by now.
+
+In your main method:
+
+Create an object of the Movie class.
+Display the movie's details.
+Update the movie's release year using the updateReleaseYear() method.
+Display the updated details.
+Check if the movie is an award-winning movie by calling the checkAwardWinner() method and display the result.
+
+Expected Output:
+Movie Title: The Godfather, Release Year: 1972
+
+After updating the release year:
+Movie Title: The Godfather, Release Year: 1975
+
+Is the movie an award winner? true
+
+
+Q.2
+----
+Write a Java program that performs the following tasks:
+
+Define a class called Product that has three non-static instance variables:
+
+productName (String)
+price (double)
+quantity (int)
+
+The class should have the following methods:
+
+Modifiers: public
+Return type: void
+Method name: displayDetails()
+Logic: A method displayDetails() that prints the details of the product (product name , price and quantity).
+
+Modifiers: public
+Return type: void
+Method name: updatePrice()
+Parameter: double newPrice
+Logic: Define a method updatePrice(double newPrice) that accepts a parameter newPrice and updates the product’s price.
+
+Modifiers: public
+Return type: void
+Method name: checkAvailable()
+Parameter: int stockQuantity
+Logic: Create a method checkAvailable(int stockQuantity) that takes stockQuantity as a parameter and prints true if the stock quantity is greater than 0 and less than or equal to quanity, indicating the product is available; otherwise, it prints false.
+
+Modifiers: public
+Return type: void
+Method name: calculateDiscount()
+Parameter: double discountPercentage
+Logic: Define a method calculateDiscount(double discountPercentage) that calculates the discounted price based on the given percentage. The method should print the new price after applying the discount:
+newPrice = price - (price * (discountPercentage / 100)).
+
+In your main method:
+
+Create an object of the Product class.
+Display the product's details.
+Update the product's price using the updatePrice() method and display the updated details.
+Check if the product is available by calling the checkAvailable() method and display the result.
+Calculate and display the discounted price using the calculateDiscount() method.
+
+Expected Output:
+Product Name: Laptop, Price: 1000.0, Quantity: 57
+
+After updating the price:
+Product Name: Laptop, Price: 1200.0, Quantity: 57
+
+Is the product available in stock? true
+
+Discounted Price after 10% off: 1080.0
+
+
+Q.3
+------
+Write a Java program that performs the following tasks:
+
+Define a class called PrimeChecker that has tow non-static instance variable:
+
+number (int)
+isPrime (boolean)
+
+The class should have the following methods:
+
+
+Modifiers: public
+Return type: void
+Method name: isPrime()
+Parameter: None
+Logic: Define a method checkPrime() that checks whether the number is prime or not. A prime number is a number greater than 1 that is divisible only by 1 and itself. The method should initialize isPrime variable to true if the number is prime, and false otherwise.
+
+Modifiers: public
+Return type: void
+Method name: primeStatus()
+Parameter: None
+Logic: Define a method primeStatus() that checks the isPrime variable and prints a message:
+
+If the number is prime, prints "The number is prime".
+If the number is not prime, prints "The number is not prime".
+
+In your main method:
+
+Create an object of the PrimeChecker class.
+store a number and Display the result of the primeStatus() method.
+
+Example Output:
+Number: 7
+The number is prime
+
+Number: 10
+The number is not prime
+

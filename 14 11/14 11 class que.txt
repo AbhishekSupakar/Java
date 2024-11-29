@@ -1,0 +1,35 @@
+Q1. Write a program that performs various arithmetic operations
+(addition, subtraction, multiplication, division, and modulus) on
+int, float, and double types. Observe any differences in results
+or precision between them.
+
+Q2. Write a program that takes two integers and two double values.
+Perform addition, subtraction, multiplication, division, and modulus
+operations on both sets of values and print the results.
+Objective: Practice arithmetic operations on int and double types
+and observe how division differs between integer and floating-point numbers.
+
+Q3. Create local variables for two integers, num1 and num2.
+Assign them values and perform addition, subtraction, multiplication,
+division, and modulus operations. Print the results.
+
+Q4. Declare local variables of different types (int, double, char, and boolean).
+Assign compatible values and print each variable.
+
+Q5.  Define a local variable for the radius of a circle, then calculate, store and
+print the area of circle using the formula area = π * radius * radius.
+
+Q6. Define a variable for temperature in Celsius, convert it to Fahrenheit using
+the formula fahrenheit = (celsius * 9/5) + 32, and print the result.
+
+Q7. Declare and initialize two String variables. Concatenate them into
+a single message, store and print the result.(Hint: + used with strings cab be used
+to concatenate)
+
+Q8. Define three int variables for three numbers, calculate their average, and print it.
+
+Q9. Write a program that swaps the values of two integer variables without using a
+    third variable.
+
+Q10.  Create a program that stores a length in meters as a double and converts
+      it to kilometers.

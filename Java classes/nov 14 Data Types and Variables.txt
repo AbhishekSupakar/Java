@@ -1,0 +1,130 @@
+-------------- Data Types and Variables ----------------------
+Q1. What is a data type?
+Answer: Data types are the keywords which are used to create variables where
+     we can store single or multiple values at a time.
+
+ There are two categories of data types based on no. of values to be stored
+       in variable:
+          i.  Primitive Data Type:The data types used to create variable
+      which can store only one value at a time.
+          int num;// Here in num we can store only one integer value
+          double n;// Here in n we can store only one decimal value
+             There are 2 types of Primitive data types:
+         Based on type of value:
+            1. Numeric:
+               Integral:
+                   - byte
+               - short
+               - int
+               - long
+
+               Real:
+                 - float
+             - double
+
+        2. Non Numeric
+               - char
+               - boolean
+       
+          ii. Referenced Data Type: The data type used to create variable
+      which can store null or reference number of an object, and the
+      object may contain single or multiple states at a time.
+          String str="Jagannath";//Here in n we stored multiple characters
+          - class
+      - enum
+      - interface
+      - array
+
+     
+
+Q2. What is variable?
+Answer: A variable is named memory location which is used to store
+         single or multiple values at a time.
+
+Q3. How many types of variables are there?
+Answer: There are two types:
+     1. Local Variable:
+                 -  meant for operation
+                 - declared inside a method / constructor/ block.
+
+     2. Global Variable :
+                - meant for object
+               - 
+
+ - declared outside a method / constructor/ block.
+         Two types of Global Variables:
+                     - Static Variable
+                               - created using static keyword
+                               - choosen when data is common for all objects
+                     - Instance Variable
+                                 - created without using static keyword
+                                - 
+
+choosen when data is different for all objects
+----------------------------------------------------------------------------------------------------------------------
+class Student{
+    // instance variables: they represent different data for different object
+ String name;
+ int age;
+ char gender;
+ String stream;
+    // static variable: data same for all objects
+ static String course="FSJD";
+
+   // operations
+   public static void sleep(){
+       int time = 20;//local variable: data is specific to one operation
+   System.out.println("Sleep for "+time+"hours.");
+   }
+
+public static void main(String []args){
+ 
+}
+}
+
+
+---------------------Nov 15------------------------
+
+/*
+- Default values will be assigned to global variables only.
+- Default values will be assigned only when developer doesnot assign value to
+  global variable.
+- Default value is provided by compiler.
+- Default value depends on datatype of variable.
+      byte     0
+      short    0
+      int      0
+      long     0
+
+      float    0.0
+      double   0.0
+
+      char    '\u0000'
+
+      boolean  false
+
+      String   null
+*/
+class Student{
+  String name;//instance variable
+  int age; //instance variable
+  static String course="FSJD";//static variable
+  public static void main(String []args){
+  Student s1 = new Student();
+  Student s2 = new Student();
+  s1.name = "James Gosling";
+  s1.age = 16;
+  s2.name = "Tamanna";
+  s2.age = 30;
+  System.out.println("Name of s1: "+s1.name);
+  System.out.println("Age of s1: "+s1.age);
+  System.out.println("Course: "+course);
+  System.out.println();
+  System.out.println("Name of s2: "+s2.name);
+  System.out.println("Age of s2: "+s2.age);
+  System.out.println("Course: "+course);
+  System.out.println();
+
+
+  }
+}

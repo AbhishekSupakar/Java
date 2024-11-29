@@ -1,0 +1,106 @@
+Literals in Java:
+   Literals:
+   - Literals means value/constant/data.
+   - We have different types of literals:
+      1. Integer Literal:Any positive integer or negative integer
+     used in java program is considered as integer literal.
+       - To store integer literal in a variable in java, we
+     have different data types which will be used to create a
+     variable that will support to store integer literal.They are:
+       byte
+       short
+       int
+       long
+       --------------
+       e.g:
+      class Program1{
+      public static void main(String []args){
+       byte a = 120;
+       short b = -32342;
+       int c = 800;
+       long d = 13125635L;
+      }
+      }
+---------------------------------------------------
+ Real Literal: Any positive decimal number or negative decimal number
+  is called as real literal.
+  For storing real literal in variable we have data types:
+     - float
+     - double
+   
+   class Program2{
+   public static void main(String []args){
+     float num = 123.76F;
+     double a = 7657.3546578D;
+   }
+   }
+-------------------------------------------------------------
+ Character Literal:
+  - Any single letter, single symbol or single digit within
+    single quote is called as character literal.
+    For storing character in a variable we have data type:
+       char
+
+  class TestCharacter{
+  public static void main(String []args){
+  char ch1 = 'A';
+  char ch2 = '8';
+  char ch3 = '%';
+  }
+  }
+--------------------------------------------------------
+Boolean Literal: Any conditional value(true or false) is considered
+  as boolean literal.
+  To store boolean literal in a variable we have a data type:
+    - boolean
+   class TestBoolean{
+   public static void main(String []args){
+   boolean a = true;
+   boolean b = false;
+   }
+   }
+----------------------------------------------------------
+String literal:
+  Anything within double quotes is considered as String literal.
+  - A string litreal is a instance of String class(object of String).
+  - A string is group of characters within double quotes.
+  For storing string value in literal we have a data type:
+      String
+   
+    class TestString{
+    public static void main(String []args){
+    String str = " NiT @ 2024 true";
+    }
+    }
+
+         
+ 
+
+class Sample{
+public static void main(String []args){
+System.out.println("james gosling");// String literal
+System.out.println(56712);//integer literal
+System.out.println(67.345);//real literal
+System.out.println('A');//character literal
+System.out.println(true);//boolean literal
+}
+}
+
+-------------------------------------------------------------------------
+class Sample{
+public static void main(String []args){
+  System.out.println("Min. value for byte is: "+Byte.MIN_VALUE);
+  System.out.println("Max. value for byte is: "+Byte.MAX_VALUE);
+  System.out.println();
+  System.out.println("Min. value for short is: "+Short.MIN_VALUE);
+  System.out.println("Max. value for short is: "+Short.MAX_VALUE);
+  System.out.println();
+  System.out.println("Min. value for int is: "+Integer.MIN_VALUE);
+  System.out.println("Max. value for int is: "+Integer.MAX_VALUE);
+  System.out.println();
+  System.out.println("Min. value for long is: "+Long.MIN_VALUE);
+  System.out.println("Max. value for long is: "+Long.MAX_VALUE);
+
+
+}
+}

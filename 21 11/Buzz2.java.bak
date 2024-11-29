@@ -1,0 +1,23 @@
+class Buzz2{
+	
+	public static void displayBuzzNumbers(int p, int q){
+		int i;
+		for (i=p;i<=q ;i++ )
+		{
+			if (i%7==0 || i%10==7)
+			{
+				System.out.print(i+" ");
+			}
+		}
+		System.out.println();
+		
+		
+	}
+	public static void main(String[] args) 
+	{
+		int p=10;
+		int q=30;
+		System.out.println("The Buzz Numbers between "+p+ " and " +q+ " are:" );
+		displayBuzzNumbers(p, q);
+	}
+}

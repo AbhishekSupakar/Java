@@ -1,0 +1,51 @@
+---------------- Method and Types of Method ----------------
+Method:
+- A method is a part of program which contains a block in which we provide
+  business logic to perform some business operations.
+- A method has following parts:
+    access modifier: where to access
+    non acess modifier: how to access
+    return type: tell about the type of value to be returned
+    method name: identification of method
+    method paranthesis: separator to hold input for operation in parameters
+    method parameters: variables to get the input during method call
+    throws statement: report the exception to a caller
+    method body: curly braces inside which we write logic to be reused
+    method logic: statements to be exceuted as the operation
+    semicolon: end of statement
+    e.g:
+     public static void findSum(int a, int b)
+
+ Terms in method:
+    method prototype/ header: complete declaration which contains
+        modifiers , return type, method name and parameters
+   
+    method signature: combination of return type and method name alongwith
+     parameters.
+
+Note: In a method only the signature is compulsory, the remaining are dependent
+      on requirement.
+
+There are 5 types of methods based on different factors:
+    1. based on declaration
+         i. Predefined
+     ii. User Defined
+
+    2. based on accessibility:
+         i. static method
+     ii. non static method
+
+    3. based on input:
+        i. parameterized method
+    ii. non parameterized method
+
+    4. based on output:
+       i,. method with void as return type
+       ii. method with data type as return type
+
+    5. based on body
+      i.  concrete method
+      ii. abstract method
+     
+
+Q1. What is a method?

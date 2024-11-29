@@ -1,0 +1,62 @@
+Q1. Design a BankAccount class to simulate basic banking operations.
+The class should include the following:
+accountNumber,accountHolderName,balance.
+Initialize the attributes with or without a starting balance.
+Define some operations such as:
+deposit(double amount): Adds the specified amount to the account balance.
+withdraw(double amount): Deducts the specified amount from the balance if
+sufficient funds are available; otherwise, display an appropriate message.
+displayAccountInfo(): Displays the account details, including account
+number, account holder name, and current balance.
+
+Q2. Design a Student class to manage student details and grades.
+The class should include the following:
+studentId, studentName, totalMarks.
+Initialize the student details with or without total marks.
+Define some operations such as:
+addMarks(double marks): Adds the specified marks to the total.
+deductMarks(double marks): Deducts the specified marks from the total if
+   sufficient marks are available; otherwise, display an appropriate message.
+displayStudentInfo(): Displays the student ID, name, and total marks.
+
+Q3. Design a Product class to manage inventory in a store.
+The class should include the following:
+productId, productName, stockQuantity.
+Initialize the product details with or without stock quantity.
+Define some operations such as:
+addStock(int quantity): Increases the stock by the specified amount.
+sellStock(int quantity): Reduces the stock by the specified amount if
+    enough stock is available; otherwise, display an appropriate message.
+displayProductInfo(): Displays the product ID, name, and available
+    stock quantity.
+
+Q4. Design a Car class to simulate a car's basic attributes and operations.
+The class should include the following:
+carModel, ownerName, fuelLevel.
+Initialize the car's attributes with or without a starting fuel level.
+Define some operations such as:
+refuel(double liters): Adds the specified liters of fuel to the fuel level.
+drive(double distance): Decreases the fuel level based on the distance
+ driven (assume a fixed fuel consumption rate); display a warning if
+ fuel is insufficient.
+displayCarInfo(): Displays the car model, owner name, and fuel level.
+
+Q5. Design a MobilePhone class to manage mobile phone details and operations.
+The class should include the following:
+phoneNumber, ownerName, balance.
+Initialize the mobile phone details with or without a starting balance.
+Define some operations such as:
+recharge(double amount): Adds the specified amount to the balance.
+makeCall(double cost): Deducts the call cost from the balance if
+    sufficient funds are available; otherwise, display an appropriate message.
+displayPhoneInfo(): Displays the phone number, owner name, and balance.
+
+Q6. Design a LibraryBook class to manage library book details and availability.
+The class should include the following:
+bookId, bookTitle, isAvailable.
+Initialize the book details, marking its availability as true or false.
+Define some operations such as:
+borrowBook(): Marks the book as borrowed if it is available; otherwise,
+          display a message that the book is already borrowed.
+returnBook(): Marks the book as available.
+displayBookInfo(): Displays the book ID, title, and availability status.

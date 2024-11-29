@@ -1,0 +1,18 @@
+NOTE: CREATE PROGRAMS AS PER REALTIME OBJECTS.
+Q1. A famous clothing brand has been launched in Nexus Mall on the occasion of
+Diwali.
+The company is offering 30% discount on purchasing articles whereas the other
+brands offer 20% discount.
+WAP to store the details of product and calculate and display the total price
+ to be paid by the user after discount.
+ Generate the output with readable message.
+
+Q2. WAP to store the details of different Employees of same company.
+  Store the basicpay of an employee,calculate the allowances as per given:
+      D.A   -  30% of basic pay
+      HRA  -   15% of basic pay
+      PF -     12.5% of basic pay.
+   Display the Gross pay and Net Pay of each employee after calculating the
+   allowances.
+   GP = basicPay + DA + HRA;
+   NP = GP + PF;

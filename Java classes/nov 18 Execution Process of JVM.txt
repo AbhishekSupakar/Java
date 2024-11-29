@@ -1,0 +1,27 @@
+----------------   Execution Process of JVM   -------------
+                    (Introduction to JVM Architecture)
+- Whenever JVM has to execute a java program it calls three main
+   resources:
+       - Class Loader
+       - main method
+       - Garbage Collector
+- Whenever execution has to start JVM takes some memory from RAM.
+  The memory is divided into 5 different categories:
+    1. method area:class is loaded
+    2. stack area: execution is done
+    3. heap area:divided into two parts:
+                 1. Static Pool Area
+                 *all the static elements
+         2. Heap Memory
+               *object is loaded
+            inside object all the non static elements are loaded
+    4. PC register: here execution records are maintained
+    5. JNI: all the native methods are loaded.
+
+- Class loader responsibility is to load the class.It also loads all
+  the SV and SM into a special memory area named as Static Pool Area.
+- Once the loading is done, class loader will exit and JVM will call
+  main method so that the excecution of the program will be done
+  line by line.
+- Once the execution is done, JVM calls the last resource to clean the
+  memory. The resources is Garbage Collector.

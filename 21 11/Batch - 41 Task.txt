@@ -1,0 +1,65 @@
+Q1. Write a Java program to display all the Buzz Numbers between two integers
+p and q (where p < q). A Buzz Number is a number that either:
+   - Ends with 7 (last digit is 7), or
+   - Is divisible by 7.
+Requirements:
+Create a user-defined method named isBuzzNumber(int num) to check if
+a number is a Buzz Number.
+The method should return true if the number is a Buzz Number, otherwise
+return false.
+Create another method named displayBuzzNumbers(int p, int q) to iterate
+through the range [p, q] and display all the Buzz Numbers.
+In the main() method:
+Store value for input for p and q.
+Call the method displayBuzzNumbers(p, q) to display the results.
+Example Input and Output:
+Input:
+int p = 10
+int q = 30
+
+Output:
+The Buzz Numbers between 10 and 30 are:
+14, 17, 21, 27
+
+Q2. WAP for following requirement:
+Store an integer number and a choice number and perform the task as follows:
+If choice is 1:
+call 'isPalindrome(int num)':Check and display the number is a
+palindrome number or not a Palindrome.
+
+If choice is 2: call 'isPerfect(int num)':Check if the number is a
+Perfect Number or not a perfect number.
+
+If no choice matches then display "Exit."
+
+Input and Output Example:
+Input:  choice: 1
+         number: 151
+Output: 151 is a Palindrome Number.
+
+Input: choice: 2
+       number: 28
+Output: 28 is a Perfect Number.
+
+Input: choice: 3
+Output: Exit.
+
+Q3. Write a Java program to store a number and determine the following
+using user-defined methods:
+Count the number of digits in the number.
+Check whether the number contains an odd or even number of digits.
+Requirements:
+Create a user-defined method named countDigits(int number):
+Accept an integer as input.
+Store total count of digits in the number in a variable 'count'.
+Call another user-defined method named isOdd(int count) from same method:Accept
+the count of digits as input.
+Display whether the count is odd, or even.
+
+Example Input and Output:
+Sample Input:
+number: 749
+
+Sample Output:
+Number of digits = 3
+The number contains an odd number of digits.

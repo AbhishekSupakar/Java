@@ -1,0 +1,111 @@
+Q1. String Length:
+Write a program to input a string from the user and display its length
+using the length() method.
+
+Q2. Character Extraction:
+Write a program to find and print the character at the 5th position of
+a given string using the charAt(int index) method. Handle cases where
+the string length is less than 5.
+
+Q3. String Concatenation:
+Write a program to concatenate two strings entered by the user using
+the concat(String str) method and print the result.
+
+Q4. Substring Extraction:
+Write a program to extract a substring from a given string using the
+substring(int beginIndex, int endIndex) method. Ask the user for the
+start and end indices.
+
+Q5. String Comparison:
+Write a program to compare two strings entered by the user using the
+equals(String anotherString) method and display whether they are equal.
+
+Q6. Ignore Case Comparison:
+Write a program to compare two strings for equality while ignoring
+their case using the equalsIgnoreCase(String anotherString) method.
+
+Q7. String Replacement:
+Write a program to replace all occurrences of a character in a string
+with another character using the replace(char oldChar, char newChar) method.
+
+Q8. Starts and Ends Check:
+Write a program to check if a given string starts with "Java" and ends
+with "Code" using the startsWith(String prefix) and endsWith(String suffix)
+methods.
+
+Q9. Case Conversion:
+Write a program to convert a given string to uppercase and lowercase using
+the toUpperCase() and toLowerCase() methods.
+
+Q10. Whitespace Trimming:
+Write a program to remove leading and trailing whitespace from a user-input
+string using the trim() method.
+
+Q11. Index of a Substring:
+Write a program to find the first and last occurrence of a substring
+in a string using the indexOf(String str) and lastIndexOf(String str) methods.
+
+Q12. String Splitting:
+Write a program to split a sentence into individual words using the
+split(String regex) method and print each word on a new line.
+ 
+Q13. String Joining:
+Write a program to join multiple strings using the
+join(CharSequence delimiter, CharSequence... elements) method.
+
+Q14. String Containment:
+Write a program to check if a string contains a specific sequence of
+characters using the contains(CharSequence s) method.
+
+Q15. String Reversal:
+Write a program to reverse a given string by converting it into a
+char array and manipulating it, as String itself does not have a
+reverse method. Use the toCharArray() method.
+
+Q16. WAP to Accept a name and print it in reverse form.
+   (If name is JAGANNATH, then output is HTANNAGAJ)
+
+Q17. WAP to accept a name. Then display the ASCII value of each character
+     present in that name.
+
+Q18. WAP to read a word. Print the position of the first vowel occurring
+    in the word. If there is no vowel in the word then print 'Sorry no vowel'.
+
+Q19.  WAP to take a statement as an input from the user and then display the
+     frequency of the vowels occurring in the statement.
+
+Q20. WAP to enter any sentence and calculate the following:
+  a) Total number of digits present in it.
+  b) Total number of small letters and capital letters present in it.
+  c) Total number of alphabets used in it.
+  d) Total number of special character used in it.
+  e) Total number of vowels presents in it.
+  f) Total Number words present in that sentence.
+
+Q21. Write program to accept any word and check whether the word is palindrome or not.
+
+Q22. WAP to accept a name (in first name & last name format), then display that
+     name in short format. (Example - KARTHIKEYA NAIDU becomes K. NAIDU)
+
+Q23. WAP to converting all capital letters of a string into small letters
+(without using PDM). For example:
+Input: MY NAME IS JAGANNATH
+Output: my name is jagannath
+
+Q24.  In Piglatin a word such as KING becomes INGKAY, TROUBLE becomes OUBLETRAY
+   as so on. The first vowel of the original word becomes the starting of the
+   translation and proceeding letter being shifted towards the end and followed
+   by AY. Word that begins with a vowel is left unchanged. WAP to accept
+   a word and convert in to Piglatin word.
+
+Q25. WAP to accept a sentence then convert each character to second next character.
+   The character A becomes C, Y becomes A and Z becomes B.
+
+Q26. A name is to be said as odd name if the ASCII code of each character
+   become an odd number. Write a program to accept a name and check whether
+   the given name is odd name or not.
+
+
+
+   h e l o w o r l d
+   0 1 2 3 4 5 6 7 8

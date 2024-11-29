@@ -1,0 +1,77 @@
+Q1. Telangana Electricity Board charges from their consumers according
+to the units consumed per month.The amount is calculated as per
+the tariff given below:
+Units Consumed                Charge
+Upto 100 units              ₹5.50 per unit
+For next 200 units      ₹6.50 per unit
+For next 300 units      ₹7.50 per unit
+For next 600 units      ₹8.50 per unit
+WAP to initialize conusmer's name, comsumer's number and
+the units consumed.The program displays the floowing information
+after calculating the amount.
+          Money Receipt
+Consumer's Name  :
+Consumer's Number:
+Units Consumed   :
+Amount to be paid:
+
+Q2.Q1.WAP for the below requirement:
+International Cricket Council is the global governing body for cricket.The ICC
+governs and administrates the game and works with its 108 members to grow
+the sport. The ICC is also responsible for the staging of all ICC Events.
+The ICC presides over the ICC Code of Conduct, playing conditions,
+the Decision Review System and other ICC regulations.Recently ICC came up
+with a project for generating the Men's Test Batting Rankings
+Create a class BatsMan with the following specifications:
+  Create variables as per requirement.
+
+   Create Players to initialize:
+      Team,Player'sName,MatchesPlayed,TotalRuns,NoOfBallsFaced
+   void calculateAverage(): compute & display the averageScore
+                    by dividing no. of runs with no. of matches
+    played till date.
+
+   void strikeRate(): compute and initialize strike rate of player
+                     Strike rate = (Runs scored / Balls faced) x 100
+
+   void calculateRating(): compute and initialize the rating
+  void displayDetails() to display the BatsMan details in the following format:
+  Team     Name       MatchesPlayed  TotalRuns  NoOfBallsFaced  StrikeRate
+  INDIA    V KOHLI     113            8848         15924          55.56
+
+Create a main class to test your logic.
+
+Q3. Write a program in Java to input a character. Find and display the
+    next 5 characters in the ASCII table.
+
+Q4.WAP for the below requirement:
+Program for a rectangle
+Find the width of the rectangle based on the given area and length from the user
+Area and length will be given in integer
+
+Q5. A man is walking at a speed of 5m/sec, crosses the bridge of length 120m.
+    Find the time taken to cross the bridge in minutes. Design two different
+    methods to solve the problem.
+
+
+Q7. WAP for the below requirement:
+        i. Create 3 classes
+       ii. 1st class contains SV,NSV,SM NSM. Print the SV in SM, NSV in NSM
+      iii. 2nd class contains SM which will call SM of 1st class,
+           Create NSM which will call the NSM of 1st class.
+       iv. 3rd class contains  main method which will call SM and NSM
+of 2nd class.
+
+Q8. Create a class. Create NSV and NSM. Create a LV inside NSM with the same
+        name used as NSV. Access the NSV and LV separately inside the NSM.
+Call the NSM from the main method.
+
+
+Q9. WAP for below requirement:
+        i. 3 cars of same brand moving at different speed and travelled for
+   different amount of time.
+        ii. Find the distance travelled by each car and print all the
+details of car.
+Take class name as Car.Take 1 SV for car brand, 2 nsv for speed and time.
+Create objects to assign values to NSV.
+Create a method to findDistance travelled by car.

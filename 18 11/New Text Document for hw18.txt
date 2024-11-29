@@ -1,0 +1,27 @@
+Q1. WAP for the following requirement:
+       - Create a class
+       - Create a static method which will be receiving two integers(parameters) and display the 
+         greater number among them.
+      - Call the method from the main method by passing arguments(value).
+Q2. WAP for the following requirement:
+       - Create a class
+       - Create a static method which will be receiving two integers(parameters) and display the 
+         smaller number among them.
+      - Call the method from the main method by passing arguments(value).
+
+Q3. Scenario 1: Salary CalculationCreate a class named Employee.
+Create a static method calculateBonus that takes an employee's
+salary and a percentage (as parameters) and display the calculated bonus.
+Take variables to represent name,dept,employee id and designation of
+different employees.
+Create a non static method to display the details.
+In the main method, call the calculateBonus method and non static
+method for three employees with different salaries and percentages,
+and display the bonus for each.
+
+Scenario 2:  Discount on Products
+Create a class named Product.
+Define a static method calculateDiscount that accepts a product's price
+and a discount percentage (as parameters) and display the discounted price.
+In the main method, pass different product prices and discount percentages,
+and display the discounted prices.
