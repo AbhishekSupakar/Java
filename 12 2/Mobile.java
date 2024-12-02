@@ -1,33 +1,3 @@
-/*
-Case 1: Successful Unlock and Messaging
-
-Enter mobile Pattern : 
-Star
-Enter mobile Biometric Id: 
-9876543210
-Enter mobile PIN: 
-4321
-
-Choose unlock type:
-1. Pattern
-2. PIN
-3. Biometric ID
-Enter your choice : 2
-Enter PIN:
-4321
-Phone unlocked with PIN.
-
-Choose message type:
-1. Contact Name
-2. Phone Number
-Enter your choice : 
-1
-
-Enter contact name:
-John
-Messaging to contact: John
-*/
-
 
 import java.util.Scanner;
 
@@ -98,7 +68,7 @@ class Mobile
 	{
 		System.out.println("Choose message type:\n1. Contact Name\n2. Phone Number");	
 	}
-	public boolean CheckSwitchPin()
+	public void CheckSwitchPin()
 	{
 		Scanner sc = new Scanner(System.in);
 		Display();
@@ -111,7 +81,7 @@ class Mobile
 		case 3: System.out.print("Enter Biometric Id:");long ch = sc.nextLong();check = unlock(ch);break;
 		default: System.out.println("Wrong Choice!!");
 		}
-		return check;
+		//return check;
 	}
 	public void checkSwitchMsg()
 	{
