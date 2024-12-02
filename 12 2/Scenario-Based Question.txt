@@ -1,0 +1,148 @@
+Scenario-Based Question
+------------------------------------
+Problem Statement
+A mobile company wants to implement a secure system for unlocking their phones and messaging functionality. 
+Each phone is configured with specific credentials:
+
+The phone has the following functionality:
+
+Unlocking the phone:
+A phone can be unlocked using either the pattern, PIN, or biometric ID. The correct value must match the configured credentials for successful unlocking. If the input does not match the stored credentials, the phone remains locked, and an error message is displayed.
+
+Messaging:
+The phone can send messages only if it is unlocked.
+The msg method supports two types of inputs:
+String: The name of the contact (e.g., "Alice").
+long: A phone number (e.g., 9876543210L).
+
+
+Task : 
+================
+class name: Mobile
+
+Attributes:
+isUnlocked (boolean): Indicates whether the phone is locked or unlocked.(stores true and false)
+pattern (String): Stores the unlock pattern. (allowed text are : "Star", "Square", "Cross", "Plus")
+biometricId (long): Stores the biometric ID. (e .g. :12345678 )  
+pin (int): Stores the PIN. (Consider only 4 digit numbers)
+
+Implement the following methods:
+
+Method 1:
+----------------------
+Modifier : public
+Return type: void
+Method  name and parameters: unlock(String text)
+Logic : 
+This method compares the text with the pattern, if they both are same it assigns true to isUnlocked variable otherwise it assigns false.
+Also it prints some message based on matching pattern, if the text and pattern matches it  prints "Phone unlocked with pattern." else it prints 
+"Incorrect pattern. Phone remains locked.".
+
+Method: 2
+----------------------
+Modifier : public
+Return type: void
+Method  name and parameters: unlock(long id):
+Logic : 
+This method compares the id with the biometricId, if they both are same it assigns true to isUnlocked variable otherwise it assigns false.
+Also it prints some message based on matching biometricId, if the id and biometricId matches it  prints "Phone unlocked with biometricId." else it prints "Incorrect biometricId. Phone remains locked.".
+
+Method: 3
+----------------------
+Modifier : public
+Return type: void
+Method  name and parameters: unlock(int mobPin)
+Logic : 
+This method compares the mobPin with the pin, if they both are same it assigns true to isUnlocked variable otherwise it assigns false.
+Also it prints some message based on matching pin, if the mobPin and pin matches it  prints "Phone unlocked with PIN." else it prints "Incorrect PIN. Phone remains locked.".
+
+Method: 4
+----------------------------
+Modifier : public
+Return type: void
+Method  name and parameters: msg(String contactName)
+Logic : 
+This methods checks the isUnlocked variable and performs printing operation. 
+If the isUnlocked is true then this method prints "Messaging to contact:" <contactName> else it prints "Phone is locked. Cannot send a message".
+
+Method: 5
+-----------------------
+Modifier : public
+Return type: void
+Method  name and parameters: msg(long phoneNumber): 
+Logic : 
+This methods checks the isUnlocked variable and performs printing operation. 
+If the isUnlocked is true then this method prints "Messaging to number:" <phoneNumber> else it prints "Phone is locked. Cannot send a message".
+
+
+Implement a menu-driven logic in the main method of the Mobile class to:
+
+Read the user input and initialize pattern, biometricId and pin attributes by creating an object of Mobile class.
+Prompt the user to choose an unlock method using a switch-case statement.
+Attempt to unlock the phone by calling the appropriate overloaded unlock method by passing the matching argument.
+Display another menu to choose a message type and call the appropriate overloaded msg method by passing the matching argument.
+Display appropriate messages based on the success or failure of each operation.
+
+
+Example Input and Output: 
+==================================
+Case 1: Successful Unlock and Messaging
+
+Enter mobile Pattern : 
+Star
+Enter mobile Biometric Id: 
+9876543210
+Enter mobile PIN: 
+4321
+
+Choose unlock type:
+1. Pattern
+2. PIN
+3. Biometric ID
+Enter your choice : 2
+Enter PIN:
+4321
+Phone unlocked with PIN.
+
+Choose message type:
+1. Contact Name
+2. Phone Number
+3. Contact ID
+Enter your choice : 
+1
+
+Enter contact name:
+John
+Messaging to contact: John
+
+Case 2: Incorrect Unlock Attempt
+------------------------------------------------------
+Enter mobile Pattern : 
+Star
+Enter mobile Biometric Id: 
+9876543210
+Enter mobile PIN: 
+4321
+
+Choose unlock type:
+1. Pattern
+2. PIN
+3. Biometric ID
+
+Enter your choice :
+1
+Enter pattern:
+wrongPattern
+
+Incorrect pattern. Phone remains locked.
+
+Choose message type:
+1. Contact Name
+2. Phone Number
+3. Contact ID
+Enter your choice : 
+2
+Enter phone number:
+7878987901
+
+Phone is locked. Cannot send a message".

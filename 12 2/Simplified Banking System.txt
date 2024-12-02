@@ -1,0 +1,124 @@
+Simplified Banking System
+--------------------------------------
+Problem Statement
+A banking system allows users to securely withdraw money through different methods. The system doesn't require separate authentication but relies on secure inputs during withdrawal operations.
+
+Task :
+================
+class name: BankingSystem
+
+Attributes:
+balance (double): Stores the account balance.
+
+
+Users can withdraw money through one of the following methods:
+
+Cash Withdrawal:
+-------------------------------
+Modifier : public
+Return type: void
+Method  name and parameters: withdraw(double amount)
+Logic :
+Provide the amount as a double. This method will check if sufficient balance is available before withdrawal, if not then it prints "Insufficient balance. Withdrawal denied."
+If sufficient balance is there then this method updates the balance by reducing the given amount from it and prints a message
+"Withdrawal of  <amount >  successful. Remaining balance:  <balance>. "
+
+
+Cheque Withdrawal:
+---------------------------------
+Modifier : public
+Return type: void
+Method  name and parameters: withdraw(String chequeNumber, double amount)
+Logic :
+Recieves a valid cheque number as a String. The system verifies the cheque before proceeding.
+This methods checks that the chequeNumber stats with "CHK" or not . If yes then it prints
+ "Cheque withdrawal with cheque number <chequeNumber> processed successfully.
+ "Withdrawal of <amount> successful.  Remaining balance:  <balance>."
+
+ , if not then it prints "Invalid cheque number. Withdrawal denied.".
+
+ATM Card Withdrawal:
+-----------------------------------
+Modifier : public
+Return type: void
+Method  name and parameters: withdraw(long atmNumber, double amount)
+Logic :
+Receives the ATM card number as a long. The system ensures that the card is valid before processing.
+The method validates given ATM card numbers, by ensuring that the ATM number contains exact 16 digits.
+If yes then it performs the withdrawal operation by validating the sufficient amount.
+If the atmNumber contains 16 digits and also the balance is sufficient then it prints
+"ATM card withdrawal processed successfully."
+ "Withdrawal of <amount> successful.  Remaining balance:  <balance>."
+If the atmNumber not contains 16 digits then it prints
+"Invalid card number. Withdrawal denied."
+
+
+Display a menu to choose the withdrawal method using a switch-case statement.
+Execute the corresponding withdrawal logic based on user input.
+Example Input and Output
+
+Case 1: Cash Withdrawal
+Enter initial balance : 10000
+
+Choose withdrawal method:
+1. Cash Withdrawal
+2. Cheque Withdrawal
+3. ATM Card Withdrawal
+Enter your choice:
+1
+Enter amount to withdraw:
+500
+Withdrawal of 500 successful. Remaining balance: 9500.
+
+Case 2: Cheque Withdrawal
+---------------------------------------------
+Enter initial balance : 10000
+
+Choose withdrawal method:
+1. Cash Withdrawal
+2. Cheque Withdrawal
+3. ATM Card Withdrawal
+Enter your choice :
+2
+Enter cheque number:
+CHK12345
+Enter amount to withdraw:
+500
+
+Cheque withdrawal with cheque number CHK12345 processed successfully.
+Withdrawal of 500 successful. Remaining balance: 9500.
+
+
+
+Case 3: ATM Card Withdrawal
+----------------------------------------
+Enter initial balance : 10000
+
+Choose withdrawal method:
+1. Cash Withdrawal
+2. Cheque Withdrawal
+3. ATM Card Withdrawal
+Enter your choice :
+3
+
+Enter card number:
+9876543210123456
+Enter amount to withdraw:
+500
+
+ATM card withdrawal processed successfully.
+Withdrawal of 500 successful. Remaining balance: 9500.
+
+Case 4: Insufficient Balance for Cash Withdrawal
+--------------------------------------------------------------------------
+Enter initial balance : 10000
+
+Choose withdrawal method:
+1. Cash Withdrawal
+2. Cheque Withdrawal
+3. ATM Card Withdrawal
+Enter your choice :
+1
+Enter amount to withdraw:
+20000
+Insufficient balance. Withdrawal denied.

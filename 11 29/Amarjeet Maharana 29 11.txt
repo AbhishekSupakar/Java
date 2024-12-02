@@ -110,7 +110,8 @@ Output:
 Ques - 3
 --------------------
  Vehicle Speed and Fuel Efficiency.
-Write a Java program to model a Vehicle and calculate its speed and fuel efficiency based on the distance traveled, time taken, and fuel consumed.
+Write a Java program to model a Vehicle and calculate its speed and fuel efficiency 
+based on the distance traveled, time taken, and fuel consumed.
 Requirements:
 
 Define a Vehicle class with the following:
