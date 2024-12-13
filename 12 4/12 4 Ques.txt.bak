@@ -1,0 +1,191 @@
+Question : 1
+------------------------
+You are tasked with implementing a simple Shopping Cart system that allows customers to ,view their details, and calculate the total price after applying a discount.
+
+Requirements:
+
+Create three classes: 
+
+1. Class name : Clothing 
+Attributes:
+name (String): The name of the product.
+price (double): The price of a single unit of the product.
+qty (int): The quantity of the product in the cart.
+
+Method 
+method name : displayDetails() 
+modifiers : public 
+return type : void
+Logic:
+This method displays the details of the product in given format
+Clothing Item:  < name >  | Price per item: <  price > | Quantity: <qty>
+
+2. Class name : Electronic
+Attributes:
+name (String): The name of the product.
+price (double): The price of a single unit of the product.
+qty (int): The quantity of the product in the cart.
+
+Method 
+method name : displayDetails() 
+modifiers : public 
+return type : void
+Logic:
+This method displays the details of the product in given format
+Electronic Item:  < name >  | Price per item: <  price > | Quantity: <qty>
+
+2. Class name : Grocery
+
+Attributes:
+name (String): The name of the product.
+price (double): The price of a single unit of the product.
+qty (int): The quantity of the product in the cart.
+
+Method 
+method name : displayDetails() 
+modifiers : public 
+return type : void
+Logic:
+This method displays the details of the product in given format
+Grocery Item:  < name >  | Price per item: <  price > | Quantity: <qty>
+
+
+Create a ShoppingCart Class:
+
+This class should have an overloaded method calculatePrice() to calculate the total price for each product type (Clothing, Electronic, Grocery).
+
+Methods : 
+1.  Method name and parameters : calculatePrice(Clothing cloth, double percentage) 
+Modifiers : public 
+Return type : double
+Logic:
+This method calculates the total price and applies the given discount and returns the final price.
+The method should display the product details and the discount amount, along with the final price after the discount.
+
+2.  Method name and parameters : calculatePrice(Electronic e, double percentage) 
+Modifiers : public 
+Return type : double
+Logic:
+This method calculates the total price and applies the given discount and returns the final price.
+The method should display the product details and the discount amount, along with the final price after the discount.
+
+3.  Method name and parameters : calculatePrice(Grocery g, double percentage) 
+Modifiers : public 
+Return type : double
+Logic:
+This method calculates the total price and applies the given discount and returns the final price.
+The method should display the product details and the discount amount, along with the final price after the discount.
+
+
+Main Program:
+Create instances of Clothing, Electronic, and Grocery products.
+Set their values for name, price, and qty.
+Create an instance of ShoppingCart and use it to calculate and display the total price for each product after applying a discount of 10%.
+Finally, print the total price for all the products in the cart after the discounts have been applied.
+
+Input as : 
+Clothing Item: T-shirt, Price: 200.0, Quantity: 2
+Electronic Item: Smartphone, Price: 300.0, Quantity: 1
+Grocery Item: Apple, Price: 20.0, Quantity: 5
+Discount: 10
+
+Output as : 
+Clothing Item: T-shirt | Price per item: 200.0 | Quantity: 2
+Discount price: 40.0 | Final Price for 2 items: 360.0
+
+Electronic Item: Smartphone | Price per item: 300.0 | Quantity: 1
+Discount price: 30.0 | Final Price for 1 items: 270.0
+
+Grocery Item: Apple | Price per item: 20.0 | Quantity: 5
+Discount price: 10.0 | Final Price for 5 items: 90.0
+
+Total price of all items in cart after discount: 720.0
+
+============================================================================================================================
+Question: 2
+-------------------
+You are tasked with implementing a simple Event Booking System that allows users to view the details of different event types and calculate the total amount based on the number of attendees and any early-booking discount.
+
+Requirements:
+
+Create two classes:
+
+1. Class name: Concert
+
+Attributes:
+
+eventName (String): The name of the concert.
+ticketPrice (double): The price of a single concert ticket.
+attendees (int): The number of attendees for the concert.
+
+Method:
+method name: displayDetails()
+modifiers: public
+return type: void
+Logic: This method displays the details of the event in the following format:
+Concert: <eventName> | Ticket Price: <ticketPrice> | Number of Attendees: <attendees>
+
+
+2. Class name: TheaterPlay
+
+Attributes:
+eventName (String): The name of the theater play.
+ticketPrice (double): The price of a single ticket for the theater play.
+attendees (int): The number of attendees for the theater play.
+
+Method:
+method name: displayDetails()
+modifiers: public
+return type: void
+Logic: This method displays the details of the event in the following format:
+Theater Play: <eventName> | Ticket Price: <ticketPrice> | Number of Attendees: <attendees>
+
+
+Create an EventBookingSystem Class:
+
+This class should have methods to calculate the total cost for each event type based on the number of attendees, and also apply an early-booking discount if the event is booked before a certain date.
+
+Methods:
+1. Method name and parameters: applyDiscount(Concert concert, int daysBeforeEvent)
+    Modifiers: public
+    Return type: double 
+    Logic:
+ This method should calculate the total price of Concert the it applies an early-booking discount based on the number of days before the event. 	The discount is 15% if booked more than 30 days in advance, 
+	10% if booked 15 to 30 days in advance, and
+	no discount if booked within 15 days of the event. 
+It should display the concert details and the discount applied, along with the final price after the discount.
+It  should returns the final price after calculation the discount on total price.
+
+2. Method name and parameters: applyDiscount(TheaterPlay play, int daysBeforeEvent)
+    Modifiers: public
+    Return type: double
+    Logic: This method applies an early-booking discount based on the number of days before the event.
+       	 The discount is 10% if booked more than 20 days in advance,
+	 5% if booked 10 to 20 days in advance, and
+	 no discount if booked within 10 days of the event.
+    It should display the theater play details and the discount applied, along with the final price after the discount.
+    It  should returns the final price after calculation the discount on total price.
+
+
+Main Program:
+
+Create instances of Concert, TheaterPlay events.
+Set their values for event name, ticket price, and number of attendees.
+Create an instance of EventBookingSystem and use it to apply the early-booking discount (if applicable) and display the final cost for each event.
+Finally, print the total cost for all events after applying the early-booking discounts.
+
+Input as:
+Concert: Rock Fest, Ticket Price: 100.0, Number of Attendees: 200
+Theater Play: Hamlet, Ticket Price: 150.0, Number of Attendees: 150
+
+Days before Event: 25
+
+Output as:
+Concert: Rock Fest | Ticket Price: 100.0 | Number of Attendees: 200
+Early-booking discount: 10% | Total price for 200 tickets after discount: 18000.0
+
+Theater Play: Hamlet | Ticket Price: 150.0 | Number of Attendees: 150
+Early-booking discount: 5% | Total price for 150 tickets after discount: 71250.0
+
+
+Total cost of all events after discounts: 89250.0

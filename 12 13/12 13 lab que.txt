@@ -1,0 +1,59 @@
+Q-1)
+----
+MovieTicket Class:
+
+private Attributes:
+
+movieTitle (String):
+showTime (String):
+ticketPrice (double):
+
+constructors:
+
+Constructor 1(Parameterized): Initializes the movie title and show time, with a default ticket price of 10.0.
+Constructor 2(Parameterized): Initializes the movie title, show time, and ticketPrice.
+
+The class should contain the following methods:
+
+Method 1:
+calculateTotalCost(int numberOfTickets):
+Calculates the total cost for the given number of tickets.
+Returns the total cost as a double.
+
+Method 2:
+calculateTotalCost(int numberOfTickets, double popcornPrice, int popcornQuantity):
+Calculates the total cost for the given number of tickets and popcorn (the popcorn price and quantity are parameters).
+Returns the total cost as a double.
+
+Method 3: displayTicketDetails():
+
+Displays the details of the movie ticket, including the movie title, show time, and ticket price.
+
+Program:
+
+In the main method, demonstrate the functionality of the MovieTicket class.
+Create at least two MovieTicket objects using the different constructors.
+Use the calculateTotalCost and calculateTotalCostWithPopcorn methods to calculate the total cost for different scenarios.
+Display the ticket details and the calculated costs.
+
+Q-2)
+----
+Class: HotelBooking
+Attributes:
+roomPrice (double):
+numberOfRooms (int):
+
+Constructors:
+Constructor 1:  Parameters: roomPrice (double), numberOfRooms (int)
+
+Constructor 2: Initializes roomPrice with 500 and accepts numberOfRooms.
+Parameters: numberOfRooms (int)
+
+Methods:
+calculateTotalCost(): Calculates and returns the total cost for the given number of rooms (based on current object values).
+
+calculateTotalCost(HotelBooking otherBooking): Overloaded method that calculates and returns the total cost  by combining two HotelBooking objects roomPrice.
+
+applyDiscount(double discountPercentage): Applies and returns a discount to the total price.
+
+displayBookingDetails(): Displays the booking details, including the number of rooms and total price for the current object.

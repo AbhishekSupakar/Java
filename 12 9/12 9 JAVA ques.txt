@@ -1,0 +1,60 @@
+Question 1: Food Delivery App
+You are designing a system for a food delivery app where users can browse food items.
+Each food item has a name, price, and category (e.g., "Starter", "Main Course", "Dessert").
+Users should be able to view and update the details of each item.
+
+Task:
+Create a class FoodItem with the following private fields:
+String itemName — stores the name of the food item (e.g., "Burger").
+double price — stores the price of the item (e.g., 120.50).
+String category — stores the category of the item (e.g., "Main Course").
+
+Implement the following:
+Setter Methods: Use the this keyword to assign values to private fields, ensuring no conflict with parameter names.
+Getter Methods: Allow other classes to retrieve values of these fields.
+
+Write a main class to:
+Create 3 food items (FoodItem objects).
+Use setter methods to set their details.
+Display the details using getter methods.
+Update the price of one food item and print the updated details.
+-----------------------------------------------------------------------------------------
+Question 2: Fitness Tracker
+You are building a fitness tracker app where users can monitor their daily steps,
+calories burned, and active minutes. The app should allow users to update their fitness
+data and view their progress.
+
+Task:
+Create a class FitnessTracker with private fields:
+int dailySteps — stores the number of steps taken by the user.
+double caloriesBurned — stores the calories burned during the day.
+int activeMinutes — stores the number of active minutes in a day.
+
+Implement the following:
+Setter Methods: Use the this keyword to assign values to private fields.
+Getter Methods: Retrieve the values of the fields.
+Write a test class to:
+Create a FitnessTracker object.
+Initialize fitness data using setter methods.
+Display the fitness data using getter methods.
+Simulate a scenario where the user updates their step count and calories burned, then
+display the updated data.
+--------------------------------------------------------------------------------
+Question 3: Movie Ticket Booking System
+Develop a system for a movie multiplex to manage movie ticket bookings. Each ticket
+includes details about the movie, seat number, and ticket price.
+
+Task:
+Create a class MovieTicket with private fields:
+String movieName — stores the name of the movie.
+int seatNumber — stores the seat number assigned to the ticket.
+double ticketPrice — stores the cost of the ticket.
+
+Implement the following:
+Setter Methods: Use the this keyword to resolve name conflicts.
+Getter Methods: Allow other classes to access private field values.
+Write a test class to:
+Create tickets for three movies (MovieTicket objects).
+Set the details of each ticket using setter methods.
+Retrieve and print ticket details using getter methods.
+Update the ticket price of one movie and print the updated ticket details.

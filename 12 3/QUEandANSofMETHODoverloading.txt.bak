@@ -1,0 +1,425 @@
+Ques - 1 : Guess the  output.
+------------------------------------------
+
+public class TestMcq {
+	public static void m1(long x){
+		System.out.println("long param method");
+		}
+		public static void m1(double x){
+		System.out.println("double param method");
+		}
+		public static void m1(String x){
+		System.out.println("String param method");
+		}
+		public static void main(String []args){
+		m1('A');
+		}
+}
+
+Ans: long param method
+
+Ques - 2 : Guess the  output.
+------------------------------------------
+public class TestMcq {
+	public static void m1(double x){
+		System.out.println("double param method");
+		}
+		public static void m1(String x){
+		System.out.println("String param method");
+		}
+		public static void main(String []args){
+		m1(40);
+		}
+}
+ 
+Ans: double param method
+
+Ques - 3: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(long x) {
+		System.out.println("long param method");
+	}
+
+	public static void m1(double x) {
+		System.out.println("double param method");
+	}
+
+	public static void m1(String x) {
+		System.out.println("String param method");
+	}
+
+	public static void main(String[] args) {
+		m1(40);
+	}
+}
+
+Ans: long param method
+
+Ques - 4 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int x) {
+		System.out.println("int param method");
+	}
+
+	public static void m1(double x) {
+		System.out.println("double param method");
+	}
+
+	public static void m1(String x) {
+		System.out.println("String param method");
+	}
+
+	public static void main(String[] args) {
+		m1(100);
+	}
+}
+
+Ans: int param method
+
+Ques - 5 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b) {
+		System.out.println("byte param method");
+	}
+
+	public static void m1(double x) {
+		System.out.println("double param method");
+	}
+
+	public static void m1(String x) {
+		System.out.println("String param method");
+	}
+
+	public static void main(String[] args) {
+		int x = 10;
+		m1(x);
+	}
+}
+
+Ans: byte param method XXX
+Ans: double param method
+
+Ques - 6 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b, int x) {
+		System.out.println("byte - int param method");
+	}
+
+	public static void m1(byte b1, byte b2) {
+		System.out.println("byte - byte param method");
+	}
+
+	public static void main(String[] args) {
+		byte a1 = 1, a2 = 2;
+		m1(a1,a2);
+	}
+}
+
+Ans: byte - byte param method
+
+Ques - 7 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int b, int x) {
+		System.out.println("int - int param method");
+	}
+
+	public static void m1(byte b1, byte b2) {
+		System.out.println("byte - byte param method");
+	}
+
+	public static void main(String[] args) {
+		byte a1 = 1, a2 = 2;
+		int i1 = 10, i2 = 20;
+		m1(a1,i1);
+	}
+}
+
+Ans: int - int param method
+
+Ques - 8: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b, int x) {
+		System.out.println("byte - int param method");
+	}
+
+	public static void m1(int b1, byte b2) {
+		System.out.println("int - byte param method");
+	}
+
+	public static void main(String[] args) {
+		byte a1 = 1, a2 = 2;
+		m1(a1,a2);
+	}
+}
+
+Ans: byte - int param method XX
+Ans: Error reference to m1 is ambiguous(having more than one possible)(Both are can't be same)
+
+Ques - 9: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b, int x) {
+		System.out.println("byte - int param method");
+	}
+
+	public static void m1(int b1, byte b2) {
+		System.out.println("int - byte param method");
+	}
+
+	public static void main(String[] args) {
+		byte a1 = 1, a2 = 2;
+		int i1 = 20, i2 = 30;
+		m1(a1,i2);
+	}
+}
+
+Ans: byte - int param method
+
+Ques - 10: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int... a) {
+		System.out.println("var args");
+	}
+
+	public static void m1(int a, int b) {
+		System.out.println("int int param");
+	}
+
+	public static void main(String[] args) {
+		m1(10, 20);
+	}
+}
+
+Ans: int int param
+
+Ques - 11 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int x[], int y) {
+		System.out.println("int param method");
+	}
+
+	public static void m1(int[] arr) {
+		System.out.println("array param method");
+	}
+
+	public static void main(String[] args) {
+		int n[] = { 10, 20, 30 };
+		m1(n, 100);
+	}
+}
+Ans: int param method
+
+Ques - 12: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int x, int y) {
+		System.out.println("int param method");
+	}
+
+	public static void m1(int[] arr) {
+		System.out.println("array param method");
+	}
+
+	public static void main(String[] args) {
+		int n[] = { 10, 20, 30 };
+		m1(n, 100);
+	}
+}
+
+Ans: ERROR!
+/tmp/xqOhTrIEPk/Main.java:16: error: incompatible types: int[] cannot be converted to int
+		m1(n, 100);
+		   ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+Ques - 13 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int[] a, int x) {
+		System.out.println("int[] param method");
+	}
+
+	public static void m1(int... arr) {
+		System.out.println("int... param method");
+	}
+
+	public static void main(String[] args) {
+		int n[] = { 10, 20, 30 };
+		m1(n);
+	}
+}
+
+Ans: int... param method
+
+Ques - 14 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int x) {
+		System.out.println("int param method");
+	}
+	public static void m1(long x) {
+		System.out.println("long param method");
+	}
+
+	public static void m1(int... arr) {
+		System.out.println("int... param method");
+	}
+	public static void m1(long... arr) {
+		System.out.println("long... param method");
+	}
+
+	public static void main(String[] args) {
+		m1();
+	}
+}
+
+Ans: int... param method
+
+Ques - 15 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b) {
+		System.out.println("byte param method");
+	}
+	public static void m1(short s) {
+		System.out.println("short param method");
+	}
+
+	public static void m1(int i) {
+		System.out.println("int param method");
+	}
+	
+	public static void main(String[] args) {
+		m1('A');
+	}
+}
+
+Ans: int param method
+
+Ques - 16 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte b) {
+		System.out.println("byte param method");
+	}
+	public static void m1(short s) {
+		System.out.println("short param method");
+	}
+	
+	public static void main(String[] args) {
+		m1('A');
+	}
+}
+
+Ans: error: no suitable method found for m1(char)
+
+Ques - 17 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(char c) {
+		System.out.println("char param method");
+	}
+	
+	public static void m1(float f) {
+		System.out.println("float param method");
+	}
+	public static void m1(double s) {
+		System.out.println("double param method");
+	}
+	
+	public static void main(String[] args) {
+		m1('A'+'A');
+	}
+}
+
+Ans: float param method
+
+Ques - 18 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(byte c) {
+		System.out.println("byte param method");
+	}
+	public static void m1(short f) {
+		System.out.println("short param method");
+	}
+	
+	public static void main(String[] args) {
+		byte b1 = 1, b2 = 2;
+		m1(b1+b2);
+	}
+}
+
+Ans: byte param method XXXX
+
+Ques - 19 : Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(int a, long l) {
+		System.out.println("int - long method");
+	}
+	public static void m1(long l, int a) {
+		System.out.println("long - int param method");
+	}
+	
+	public static void main(String[] args) {
+		m1(10,20);
+	}
+}
+
+Ans: ERROR!
+/tmp/EZqzxyPZDv/Main.java:13: error: reference to m1 is ambiguous
+		m1(10,20);
+		^
+  both method m1(int,long) in Main and method m1(long,int) in Main match
+1 error
+
+Ques - 20: Guess the  output.
+------------------------------------------
+class TestMcq {
+	public static void m1(float a, long l) {
+		System.out.println("float - long method");
+	}
+	public static void m1(float l, double a) {
+		System.out.println("float - double param method");
+	}
+	
+	public static void main(String[] args) {
+		m1(10,20);
+	}
+}
+
+Ans: float - long method
+
+Ques - 21: Guess the  output.
+------------------------------------------
+class Main {
+   
+public static void m1(int[] a, int x) {
+		System.out.println("int[] param method");
+	}
+
+	public static void m1(int... arr,int y) {
+		System.out.println("int... param method");
+	}
+
+	public static void main(String[] args) {
+		int n[] = { 10, 20, 30 };
+		m1(n,23);
+	}
+}
+
+Ans:ERROR!
+/tmp/uTThEYpj8X/Main.java:22: error: varargs parameter must be the last parameter
+	public static void m1(int... arr,int y) {
+	                             ^
+1 error

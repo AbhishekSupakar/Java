@@ -1,0 +1,137 @@
+Q-1)
+------
+
+Employee Data, num of projects and increment salary based on number of projects
+-------------------------------------------------------------------------------------------------------
+
+Create a BLC class Employee :
+
+Instance Variables :
+
+ String firstName
+ String lastName
+ int employeeId
+ double salary
+ int noOfProject
+
+
+Create seter methods for all instance variable  to initialize the value .
+Create getter methods for all instance variable  to return the value .
+
+Implement  calculateSalary() method that will add extra amount in salary based on NoOfProject by using following criteria.
+
+noOfProject is more than 5 and less that 10 then add 5000.
+noOfProject is more than 10 and less that 20 then add 10000.
+noOfProject is more than 20 then add 15000. 	
+
+
+Take one more method to display the details of employee with the salary.
+
+Method Name :displayEmployeeDetails()
+Logic:
+here we print the Employee class members to display employee details.
+
+
+ Take an ELC class Tester to test your logic.
+
+In this class take a main method and instantiate the Employee
+Use the setter method to initialize the data members , and call the 
+calculatesalary() method to update the salary based on project.
+call the displayEmployeeDetails() method and print all the details .
+
+
+Q-2)
+-----------
+Bowler Details and Average Calculation 
+
+Create a class called BowlerStatistics to manage bowler details and calculate their bowling average and strike rate. 
+
+
+Create a BLC class BowlerStatistics :
+
+Instance Variables:
+
+bowlerName:  String
+wickets:  int
+matches:  int
+ballsBowled:  int
+runsConceded:  int
+
+
+Define setter methods for each instance variable to initialize values individually.
+Define getter methods for each instance variable to return the values individually.
+
+Methods:
+------------
+
+Method Name: computeBowlingAverage
+Return Type: void
+Description: This method calculates the bowling average by dividing runsConceded by wickets and prints the result. 
+If any values are negative, or if runsConceded or ballsBowled are greater than 0 when matches is 0, print "Error".
+
+Method Name: computeStrikeRate
+Return Type: void
+Description: This method calculates the strike rate by dividing runsConceded by ballsBowled and prints the result. If any values are negative, or if runsConceded or ballsBowled are greater than 0 when matches is 0, print "Error".
+
+Method Name: showBowlerStatistics
+Return Type: void
+Description: This method prints all the bowler's details (bowlerName, wickets, matches, ballsBowled, and runsConceded). If any values are negative, or if runsConceded or ballsBowled are greater than 0 when matches is 0, print "Error".
+
+Create an ELC class called TestBowlerStatistics
+Main Method:
+In the main method, create an instance of BowlerStatistics.
+Use the setter methods to initialize bowlerName, wickets, matches, ballsBowled, and runsConceded.
+Call computeBowlingAverage and computeStrikeRate to display the respective calculations.
+Use showBowlerStatistics to print all the initialized values and verify the inputs.
+
+Question - 3
+----------------------
+Determining Card Type Based on Customer Spending
+You are tasked with creating a system where a customer's spending determines their credit card type. The system involves two classes: Customer and CardType.
+
+BLC Class:
+Customer:
+
+Attributes:
+ customerName (String) - The name of the customer.
+ monthlySpending (double) - The total amount spent by the customer in a month.
+
+Methods:
+setCustomerName(String name) - Sets the customer's name.
+setMonthlySpending(double spending) - Sets the customer's monthly spending.
+getCustomerName() - Returns the customer's name.
+getMonthlySpending() - Returns the customer's monthly spending.
+
+displayDetails() - Displays the customer’s details, including their name, monthly spending.
+
+Create another BLC class CardType:
+
+Attributes:
+ cardName (String) - The name of the card ("Silver", "Gold", or "Platinum").
+Methods:
+getCardName()- returns the cardName.
+assignCardName(Customer customer) - A  method that takes a Customer object as a parameter. This method should initialize the cardName  based on monthlySpending of the customer.
+Logic: 
+Spending < 10000: "Silver"
+Spending 10000 - 50000: "Gold"
+Spending > 50000: "Platinum"
+
+Create an ELC class CustomerTester
+In main Method:
+
+Create an instance of the Customer class.
+Set the customer's name and monthly spending using the setter methods.
+Call the displayDetails() method to display the customer’s details.
+Create an instance of CardType class.
+Call the assignCardName() method by sending an object of customer.
+Call the getCardName() method and print the cardType.
+
+Example:
+Customer 1: Name: "John Doe", Monthly Spending: 7000
+Card Type: Silver
+
+Customer 2: Name: "Jane Smith", Monthly Spending:28000
+Card Type: Gold
+
+Customer 3: Name: "Alice Brown", Monthly Spending: 120000
+Card Type: Platinum

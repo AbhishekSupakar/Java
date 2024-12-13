@@ -1,0 +1,26 @@
+class MovieTicket 
+{
+	private String movieName;
+	private int seatNumber;
+	private double ticketPrice;
+	public void setMovieNmae(String movieName){
+		this.movieName = movieName;
+	}
+	public void setSeatNumber(int seatNumber){
+		this.seatNumber = seatNumber;
+	}
+	public void setTicketPrice(double ticketPrice){
+		this.ticketPrice = ticketPrice;
+	}
+	public String getCaloriesBurned(){
+		return movieName;
+	}
+	public int getActiveMinutes(){
+		 return seatNumber;
+	}
+	public double getDailySteps(){
+		return ticketPrice;
+	}
+	
+}
+

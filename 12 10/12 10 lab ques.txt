@@ -1,0 +1,271 @@
+Question: 1
+------------
+What is the output of the below program?
+class Employee{
+private String name;
+public Employee(String name) {
+this.name=name;
+}
+}
+public class Test16 {
+public static void main(String[] Java) {
+Employee e = new Employee("JavaDeveloper");
+System.out.println(“Emp Name : “+e.name);
+}
+}
+
+a)Emp Name : .JavaDeveloper
+b)Blank Screen
+c)Emp Name : .
+d)Compiler time Error
+e)Runtime Error
+
+Ans: Compile time Error
+
+Question2:Question: 2
+------------
+What is the output of the below program?
+
+class T
+{
+int pCode= 99;
+}
+public class Main
+{
+public static void main(String args[])
+{
+T t1 = new T();
+System.out.println(t1.pCode);
+}
+}
+
+
+a)99
+b)Runtime Error
+c)Compile time error
+d)Blank Screen
+
+Ans: 99
+
+Question: 3
+------------
+Choose correct option for the following code
+public class ConstructorTest {
+public int a = 10;
+public String ConstructorTest(int a) {
+this.a = a;
+}
+}
+
+a)Run time error
+b)No error
+c)Compile time error
+d)10
+
+Ans: Compile time error
+
+Question 4:
+What is the output of the below program?
+class Product {
+public int num;
+public void call(Product ref) {
+ref.num++;
+}
+}
+public class Test13 {
+public static void main (String[] args) {
+Product p = new Product();
+p.num = 1;
+p.call(p);
+System.out.println(p.num);
+}
+}
+
+a)2
+b)1
+c)Compiler time Error
+d)0
+e)Runtime Error
+
+Ans: 2
+
+Question: 5
+------------
+What happens if we add return type to constructor ?
+
+a)Compile time error
+b)Run Time Error
+c)JVM treats that as method
+d)None of these
+
+Ans: JVM treats that as method
+
+Question: 6
+------------
+What is the output of the following code
+public class ConstructorTest {
+public int a = 100;
+public ConstructorTest() {
+System.out.println(a);
+}
+
+public static void main(String[] args) {
+    ConstructorTest test = new ConstructorTest();
+}
+}
+
+
+a)Runtime error
+b)Compile time error
+c)100
+d)No Output
+
+Ans:100
+
+Question: 7
+-------------
+What is the output of the below program?
+class T {
+int x = 23;
+T() {
+x = 45;
+}
+}
+public class Main {
+public static void main(String args[]) {
+T t1 = new T();
+System.out.println(t1.x);
+}
+}
+
+a)23
+b)45
+c)Runtime Error
+d)Compiler Time Error
+
+Ans: 45
+
+Question: 8
+-------------
+What is the output of the below program?
+class Person{
+Person(){
+System.out.println(“Hello constructor!”);
+return;
+}
+}
+public class Test17 {
+public static void main(String[] var) {
+Person p = new Person();
+}
+}
+
+a)Hello constructor!
+b)Blank Screen
+c)Compiler time Error
+d)Runtime Error
+
+Ans: Compiler time Error XX
+Ans: Hello constructor!
+
+Question: 9
+-------------
+What is the output of the below program?
+class Product {
+int x;
+int y;
+public Product(int x,int y) {
+this.x = x;
+this.y = y;
+}
+public void call() {
+System.out.println(“call method called”);
+}
+}
+public class Test14 {
+public static void main (String[] args) {
+Product p = new Product();
+p.call();
+}
+}
+
+a)call method called
+b)Blank screen
+c)Compiler time Error
+d)Runtime Error
+
+Ans: Compiler time Error
+
+Question: 10
+-------------
+Can we define method with same name of class name?
+
+a)Yes
+b)No
+
+Ans: Yes
+
+Question: 11
+-------------
+public class Test
+{ }
+What is the prototype of the default constructor ?
+
+a)public Test(void)
+b)Test()
+c)Test(void)
+d)public Test()
+
+Ans: public Test()
+
+------------------------------------------------------------------------------------------
+Q1. Cab Booking System (Ola/Rapido)
+Scenario:
+Create a cab booking system to handle ride information.
+Class Name: Ride
+
+Attributes:
+rideId (String) - Unique identifier for the ride.
+source (String) - Pickup location of the ride.
+destination (String) - Drop-off location of the ride.
+distance (double) - Distance of the ride in kilometers.
+fare (double) - Total fare for the ride (calculated).
+
+Constructors:
+Parameterized Constructor: Initialize rideId, source, destination, and distance.
+Automatically calculate fare using a fixed rate (e.g., ₹10 per km).
+
+Methods:
+calculateFare() - Calculate the fare based on distance (e.g., fare = distance × ₹10).
+displayRideDetails() - Display all the ride details.
+
+Target:
+Create multiple Ride objects using the constructor, calculate the fare, and display
+their details using the methods.
+----------------------------------------------------------------------------------------
+Q2. E-Wallet Application (Paytm/PhonePe)
+Scenario:
+Design an e-wallet application to manage user transactions.
+
+Class Name: Wallet
+
+Attributes:
+
+walletId (int) - Unique identifier for the wallet.
+userName (String) - Name of the wallet owner.
+balance (double) - Current balance in the wallet (default: 0).
+isKYCVerified (boolean) - Indicates whether the user has completed KYC verification.
+Constructors:
+
+Parameterized Constructor: Initialize walletId, userName, and isKYCVerified.
+Set balance to 0 by default.
+
+Methods:
+addFunds(double amount) - Add the specified amount to the wallet balance.
+makePayment(double amount) - Deduct the specified amount from the wallet balance
+if sufficient funds are available. Otherwise, display an error message.
+displayWalletDetails() - Display all wallet details.
+
+Target:
+Create a wallet object using the constructor, perform operations like adding funds
+and making payments, and display wallet details after each operation.

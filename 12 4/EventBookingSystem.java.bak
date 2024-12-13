@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class Concert{
+	String eventName ;
+	double ticketPrice ;
+	int attendees ;
+	public void displayDetails(){
+	System.out.println("Concert: "+eventName+" | Ticket Price: "+ticketPrice+" | Number of Attendees: "+attendees);	
+	}
+}
+class TheaterPlay{
+	String eventName ;
+	double ticketPrice ;
+	int attendees ;
+	public void displayDetails(){
+		System.out.println("Theater Play: "+eventName+" | Ticket Price: "+ticketPrice+" | Number of Attendees: "+attendees);	
+	}
+}
+
+
+class EventBookingSystem
+{
+	int dayBefore;
+	public double applyDiscount(Concert concert, int daysBeforeEvent){
+		concert.displayDetails();
+		return 0;
+	}
+	public double applyDiscount(TheaterPlay play, int daysBeforeEvent){
+		play.displayDetails();
+		return 0;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		EventBookingSystem ev = new EventBookingSystem();
+		ev.dayBefore = sc.nextInt();
+		TheaterPlay tp1 = new TheaterPlay();
+		Concert c1 = new Concert();
+		c1.eventName = sc.nextLine() ;
+		c1.ticketPrice = sc.nextDouble;
+		c1.attendees = sc.nextInt;
+		System.out.println("Hello World!");
+	}
+}

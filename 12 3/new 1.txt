@@ -1,0 +1,152 @@
+Types of method:
+    5 based on different categories:
+      1. based on declaration:
+          Predefined Method:
+         The methods which are already defined in predefined classes
+         or interfaces inside predefined packages to perform some
+         complex tasks are called as predefined method.
+         Predefined Classes:
+          Object
+            Math
+
+        Number
+        Byte
+        Short
+        Integer
+        Long
+        Float
+        Double
+        Character
+        Boolean
+
+        Arrays
+
+        String
+        StringBuilder
+        StringBuffer
+
+        ArrayList
+        LinkedList
+        Vector
+        Stack
+
+        HashSet
+        LinkedHashSet
+        TreeSet
+
+        PriorityQueue.....
+
+        Predefined Interface:
+           Iterable
+           Iterator
+           CloseAble
+           Collection
+           List
+           Set
+           Queue
+           Map .....
+
+taking input from user during execution of program:
+    - using Scanner
+    - using command line argument
+Scanner:
+ - Scanner is a predefined class.
+ - Scanner is available inside 'util' package.
+ - util is available inside API 'java'.
+ - As Scanner class is not available in 'java.lang'  hence we must import.
+ - Scanner class contains predefined non static methods which will be called
+   by programmer to allow the user to enter value.
+     public byte nextByte()  -- for accepting byte value from user
+     public short nextShort() -- for accepting short value from user
+     public int nextInt()   -- for accepting int value from user
+     public long nextLong()  -- for accepting long value from user
+
+     public float nextFloat() -- for accepting float value from user
+     public double nextDouble() -- for accepting double value from user
+
+     public boolean nextBoolean() - for accepting boolean value form user
+     
+     public char next().charAt(0) - for accepting single character from user
+
+     public String next():  for accepting string without space from user
+     public String nextLine(): for accepting whitespace character in string from user
+
+
+  class Sample{
+  public void display(){
+  System.out.println("hello how are you");
+  }
+  public static void main(String []args){
+   Sample s1 = new Sample();
+   s1.display();//called directly in same class
+  }
+  }
+
+  class Example{
+  public static void main(String []args){
+     Sample s1 = new Sample();
+     s1.display();// SM called from another class using class name.
+  }
+  }
+------------------------------------------------
+class AngelPriya{
+  int age;
+public int getAge(){
+    System.out.println("Hi");
+  return age;
+}
+public static void main(String []args){
+System.out.println("bakra trapped in angel priya's walk");
+  AngelPriya a1 = new AngelPriya();
+  a1.age = 16;
+  //calling a method which is returning value
+ int result =  a1.getAge();
+ System.out.println(result);
+System.out.println("bakra dead");
+}
+}
+----------------------------------------
+//WAP to store a number and display it
+import java.util.Scanner;
+class Test01{
+public static void main(String []args){
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a number: ");
+int x = sc.nextInt();// used to accept number(int type) from user through keyboard
+System.out.println("The value entered: "+x);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+         
+
+          - if else
+          - for loop
+          - do while loop
+          - while loop
+          - for each loop
+          - array
+          - String Handling
+          - Wrapper classes
+          - Introduction to collection
+
+
+
+  int x = 90;
+  double y = 90.5;
+
+  Car c1 = new Car();
+
+  public static Student show(){
+  Student s1 = new Student();
+   return s1;
+  }

@@ -1,0 +1,209 @@
+Ques - 1
+-------------
+Person Class with Voting Eligibility Check
+Create a Java program that includes a Person class with  variables name and age. 
+Implement setter and getter methods for these variables.
+attributes:
+name: String: 
+age: String: 
+
+methods:
+Modifiers: public
+method name with parameter: setName(String name)
+return type: void
+Logic :
+Initializes the name with the parameterized variable.
+
+Modifiers: public
+method name with parameter: setAge(String name)
+return type: void
+Logic :
+Initializes the age with the parameterized variable.
+
+Modifiers: public
+method name: getName()
+return type: String
+Logic :
+returns the name.
+
+Modifiers: public
+method name: getAge()
+return type: int
+Logic :
+returns the age.
+
+method name: display
+access modifiers: public
+return type: void
+This method will print all the member values.
+
+In  main method, instantiate a Person object, set its properties, and determine if the person is eligible to vote(age must be greater that 18) using a ternary operator. Finally, display all relevant message.
+
+Ques - 2
+-------------
+Employee Class with Department, Salary, Active Status, and Increment Logic
+
+Create a Java program that includes an Employee class with  variables name, department, salary, and isActive.
+
+Implement setter and getter methods for these variables. In the main method, instantiate an Employee object, 
+
+set its properties, and determine if the employee is active and if they are eligible for a bonus based on their 
+
+salary using logical conditions. Additionally, if the employee is active, apply a salary increment. 
+
+Finally, display all relevant information.
+
+
+Employee Class(BLC):
+
+Attributes:
+name: String
+department: String 
+salary: double
+active: boolean
+
+Methods:
+Setters:
+setName(String name): public: void:  Sets the name attribute.
+setDepartment(String department): public: void: Sets the department attribute.
+setSalary(double salary): public: void: Sets the salary attribute.
+setActive(boolean active): public: void: Sets the active attribute.
+
+Getters:
+getName(): public: String:  Retrieves the name attribute.
+getDepartment(): public: String: Retrieves the department attribute.
+getSalary(): public: double: Retrieves the salary attribute.
+isActive(): public: boolean: Retrieves the active attribute.
+
+Display Method:
+Method Name: display
+Access Modifiers: public
+Return Type: void
+Description: This method will print the name, department, salary, and isActive status.
+
+In main method:
+Create an instance of Employee.
+Set the name, department, salary, and isActive using the setter methods.
+Retrieve and print the name, department, salary, and isActive status using the getter methods.
+Use logical conditions to check if the employee is active and if their salary is above a certain
+threshold (e.g., 50000) to determine if they are eligible for a bonus.
+If the employee is active, apply a salary increment (e.g., 10%) and update the salary.
+Print the eligibility status for the bonus and the new salary after increment (if applicable).
+And display all the updated details.
+
+
+Ques - 3
+-------------
+Student Grade Calculation with Average Score and Promotion Status
+Objective:
+Create a Java program that includes a Student class with variables name, age, and grade. Implement setter and getter methods for these variables. Additionally, implement a method to calculate the average of four scores and assign a grade based on this average. In the main method, instantiate a Student object, set its properties, calculate the grade, and determine if the student is promoted to the next class based on their grade. Finally, display all relevant information and promotion status.
+
+Task Details:
+Student Class:
+
+Attributes:
+name: String
+age: int 
+grade: char  — grade can be 'A', 'B', 'C', 'D', or 'F'.
+
+Methods:
+Setters:
+setName(String name): Sets the name attribute.
+setAge(int age): Sets the age attribute.
+setGrade(char grade): Sets the grade attribute.
+
+Getters:
+getName(): Retrieves the name attribute.
+getAge(): Retrieves the age attribute.
+getGrade(): Retrieves the grade attribute.
+
+Calculate Grade Method:
+Method Name: calculateGrade(double score1, double score2, double score3, double score4)
+Access Modifiers: public
+Return Type: void
+Description: This method calculates the average of four scores, assigns a grade based on the average using the following grading scale:
+90 - 100: 'A'
+80 - 89: 'B'
+70 - 79: 'C'
+60 - 69: 'D'
+Below 60: 'F'
+
+Display Method:
+Method Name: display
+Access Modifiers: public
+Return Type: void
+Description: This method will print the name, age, and grade attributes.
+
+In main method:
+Create an instance of Student.
+Set the name, age, and four scores using the setter methods and the calculateGrade method.
+Retrieve and print the name, age, and grade using the getter methods.
+Display all relevant information using the display method.
+Based on the assigned grade, print a message indicating whether the student is promoted to the next class or stays in the same class:
+Grades 'A', 'B', or 'C': "Student is promoted to the next class."
+Grades 'D' or 'F': "Student stays in the same class."
+Example:
+Given the following values for a Student object:
+
+name = "Jane Doe"
+age = 16
+Scores = 88.0, 91.0, 75.0, 82.0
+
+Ques - 4
+-------------
+Bank Account Management
+
+Create a Java program that includes a Bank class with both static and non-static 
+variables to represent a bank's information and individual bank accounts. 
+Implement validation logic in setter methods, provide functionality to perform 
+operations on bank accounts, and display account details.
+
+Bank Class:
+fields/attributes:
+
+bankName: String (static)  — the name of the bank.
+ifsc: String (static) — the IFSC code of the bank.
+accountHolderName: String — the name of the account holder.
+accountNumber: long  — the account number.
+balance: double — the current balance in the account.
+
+Methods:
+Static Setters:
+setBankName(String bankName): Sets the bankName.
+setIfsc(String ifsc): Sets the ifsc 
+
+Non-Static Setters:
+setAccountHolderName(String accountHolderName): Sets the accountHolderName 
+setAccountNumber(long accountNumber): Sets the accountNumber (validation: check if the number 
+follows a specific format, e.g., 10 digits) then only assign the accountNumber else print 
+invalid account number.
+
+setBalance(double balance): Sets the balance (validation: check if the balance is non-negative, 
+if the balance is negative then print "Balance can not be -ve").
+
+static getters:
+getBankName(): Retrieves bankName.
+getIfsc(): Retrieves ifsc.
+
+Non-Static Getters:
+getAccountHolderName(): Retrieves the accountHolderName.
+getAccountNumber(): Retrieves the accountNumber.
+getBalance(): Retrieves the balance.
+
+Display Method:
+Method Name: display()
+Access Modifiers: public
+Return Type: void
+Description: Prints the bank details and account information.
+
+Operations:
+deposit(double amount): Deposits an amount into the account (validation: check if the amount is positive) 
+and perform deposit logic.
+withdraw(double amount): Withdraws an amount from the account (validation: check if the amount is positive 
+and if sufficient balance is available) and perform withdraw logic.
+
+In main method:
+Create an instance of the Bank class.
+Set the static variables using the static setter methods.
+Set the non-static variables and perform deposit and withdrawal operations.
+Display the account details.
